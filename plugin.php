@@ -4,7 +4,7 @@ Plugin Name: 404 if not found
 Plugin URI: https://github.com/YOURLS/404-if-not-found/
 Description: Send a 404 (instead of a 302) when short URL is not found
 Version: 1.2
-Author: Ozh
+Author: Lainbo
 Author URI: https://yourls.org/
 */
 
