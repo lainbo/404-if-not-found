@@ -24,7 +24,7 @@ yourls_add_action('infos_no_keyword', 'ozh_404_if_not_found', 999);
 // Display a default 404 not found page
 function ozh_404_if_not_found() {
     yourls_status_header(404);
-    $notfound = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport"content="width=device-width, initial-scale=1.0"><title>404 Not Found</title><style>*,*::before,*::after{margin:0;padding:0}body{color:#888;height:100vh;height:calc(var(--1dvh,1vh)*100);height:100dvh}@media(prefers-color-scheme:dark){html{color-scheme:dark}}main{display:grid;place-items:center;height:100%}h1{font-size:50px;display:inline-block;padding-right:12px;animation:type.5s alternate infinite}@keyframes type{from{box-shadow:inset-3px 0px 0px#888}to{box-shadow:inset-3px 0px 0px transparent}}</style></head><body><main><h1>404 Not Found</h1></main></body></html>';
+    $notfound = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>404 Not Found</title><style>*,*::before,*::after{margin:0;padding:0;}body{color:#888;height:100vh;height:calc(var(--1dvh,1vh)*100);height:100dvh;}@media(prefers-color-scheme:dark){html{color-scheme:dark;}}main{display:grid;place-items:center;height:100%;}h1{font-size:50px;display:inline-block;padding-right:12px;animation:type 0.5s alternate infinite;}@keyframes type{from{box-shadow:inset -3px 0px 0px #888;}to{box-shadow:inset -3px 0px 0px transparent;}}</style></head><body><main><h1>404 Not Found</h1></main></body></html>';
     die($notfound);
 }
 
